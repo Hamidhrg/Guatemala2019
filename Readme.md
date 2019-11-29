@@ -15,13 +15,13 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 | ---------- | ---- | ---- | ---- | ---- | ---- |
 | 8:00-9:00 | - | Introduction & presentation | Maximum Likelihood approach |  |  |
 | 9:00-10:00 | - | Introduction & presentation | RaxML |  |  |
-| 10:00-11:00 | - | Trees and Alignments | Tutorial 4 |  |  |
-| 11:00-12:00 | - | Model based Phylogenies | Tutorial 4 |  |  |
-| 12:00-13:00 | - | Lunch | Lunch | Lunch | Lunch |
-| 13:00-14:00 | - | Tutorial 1: Dataset Manipulation | IQTree |  |  |
-| 14:00-15:00 | Charla | Tutorial 2: Alignment | Tutorial 5 |  |  |
-| 15:00-16:00 | Software installation | Tutorial 3: Models & Partitions | Tutorial 5 |  |  |
-| 16:00-17:00 | Software installation | Tutorial 3: Models & Partitions | Compare the results |  |  |
+| 10:00-11:00 | - | Trees and Alignments | *Tutorial 4* |  |  |
+| 11:00-12:00 | - | Model based Phylogenies | *Tutorial 4* |  |  |
+| 12:00-13:00 | - | **Lunch** | **Lunch** | **Lunch** | **Lunch** |
+| 13:00-14:00 | - | *Tutorial 1: Dataset Manipulation* | IQTree |  |  |
+| 14:00-15:00 | Charla | *Tutorial 2: Alignment* | *Tutorial 5* |  |  |
+| 15:00-16:00 | Software installation | *Tutorial 3: Models & Partitions* | *Tutorial 5* |  |  |
+| 16:00-17:00 | Software installation | *Tutorial 3: Models & Partitions* | Compare the results |  |  |
 
 
 
