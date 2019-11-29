@@ -1,6 +1,6 @@
 # **Molecular Phylogenetics Course**
 
-By Systematic Biology Group, Lund University
+By Hamid Ghanavi from the Systematic Biology Group, Lund University
 
 ## **Introduction**
 
@@ -11,15 +11,18 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 **Location:** D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
 
 
-| Hours\Days | 13th | 14th | 15th |
-| ---------- | ---- | ---- | ---- |
-| 9:00-10:30 | Lecture 1: Introduction (NW) | Lecture 3: Introduction to model based methods (JR) | Lecture 5: Properties of DNA data and assessing robustness of hypotheses (JR) |
-| 10:30-11:00 | Fika | Fika | Fika |
-| 11:00-12:30 | Lecture 2: Understanding trees and alignments (NW) | Lecture 4: Statistical frameworks for modelling in phylogenetics (ML and Bayesian) (JR) | Lecture 6: Timing of divergence analyses and using trees for evolutionary studies (NW) |
-| 12:30-13:30 | Lunch | Lunch | Lunch |
-| 13:30-15:00 | Tutorials 1 and 2 | Tutorials 3, 4, and 5 | Tutorial 6 |
-| 15:00-15:30 | Fika | Fika | Fika |
-| 15:30-16:30 | Tutorials 1 and 2 | Tutorials 3, 4, and 5 | Tutorial 6 |
+| Hours\Days | 2nd | 3rd | 4th | 5th | 6th |
+| ---------- | ---- | ---- | ---- | ---- | ---- |
+| 8:00-9:00 | - | Introduction & presentation |  |  |  |
+| 9:00-10:00 | - |  |  |  |  |
+| 10:00-11:00 | - |  |  |  |  |
+| 11:00-12:00 | - |  |  |  |  |
+| 12:00-13:00 | Lunch | Lunch | Lunch | Lunch | Lunch |
+| 13:00-14:00 | - |  |  |  |  |
+| 14:00-15:00 | Charla |  |  |  |  |
+| 15:00-16:00 | Software installation |  |  |  |  |
+| 16:00-17:00 | Software installation |  |  |  |  |
+
 
 
 
@@ -28,7 +31,7 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 ### [Course slides](../../tree/master/Lectures)
 
-Here we will upload all the files and information shared during the lectures!
+Here I will upload all the files and information shared during the lectures!
 
 
 ### [Data used in the course](../../tree/master/Data/)
