@@ -8,13 +8,13 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 ## **Program**
 
-**Location:** D227 (Retina), Biology Building, Sölvegatan 35, 223 62 Lund
+**Location:** Guatemala
 
 
 | Hours\Days | 2nd | 3rd | 4th | 5th | 6th |
 | ---------- | ---- | ---- | ---- | ---- | ---- |
 | 8:00-9:00 | - | Introduction & presentation |  |  |  |
-| 9:00-10:00 | - |  |  |  |  |
+| 9:00-10:00 | - | Introduction & presentation |  |  |  |
 | 10:00-11:00 | - |  |  |  |  |
 | 11:00-12:00 | - |  |  |  |  |
 | 12:00-13:00 | Lunch | Lunch | Lunch | Lunch | Lunch |
