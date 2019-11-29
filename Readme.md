@@ -13,7 +13,7 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 
 | Hours\Days | 2nd | 3rd | 4th | 5th | 6th |
 | ---------- | ---- | ---- | ---- | ---- | ---- |
-| 8:00-9:00 | - | Introduction & presentation | Maximum Likelihood approach |  |  |
+| 8:00-9:00 | - | Introduction & presentation | Maximum Likelihood approach | Bayesian approach |  |
 | 9:00-10:00 | - | Introduction & presentation | RaxML |  |  |
 | 10:00-11:00 | - | Trees and Alignments | *Tutorial 4* |  |  |
 | 11:00-12:00 | - | Model based Phylogenies | *Tutorial 4* |  |  |
