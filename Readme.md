@@ -19,7 +19,7 @@ In this intense course we will introduce the basics of phylogenetics, covering b
 | 11:00-12:00 | - | Model based Phylogenies | *Tutorial 4* | *Tutorial 6* | NGS & Phylogenomics |
 | 12:00-13:00 | - | **Lunch** | **Lunch** | **Lunch** | **Lunch** |
 | 13:00-14:00 | - | *Tutorial 1: Dataset Manipulation* | IQTree | *Tutorial 6* | QA & Literature Review |
-| 14:00-15:00 | Charla | *Tutorial 2: Alignment* | *Tutorial 5* | *Tutorial 6* | QA & Literature Review |
+| 14:00-15:00 | Talk | *Tutorial 2: Alignment* | *Tutorial 5* | *Tutorial 6* | QA & Literature Review |
 | 15:00-16:00 | Software installation | *Tutorial 3: Models & Partitions* | *Tutorial 5* | Compare the results | QA & Literature Review |
 | 16:00-17:00 | Software installation | *Tutorial 3: Models & Partitions* | Compare the results | Students' datasets | QA & Literature Review |
 
