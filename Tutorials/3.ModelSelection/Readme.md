@@ -14,11 +14,11 @@ Now I want you to save a \*.phy and a \.nex alignment file with the name **Datas
 You should have these two files now:
 
 ```
-Dataset.phy
-Dataset.nex
+ConCATenated.phy
+ConCATenated.nex
 ```
 
-For this tutorial we are going to use the `Dataset.phy` and a command file that we are going to create together. The command file has different blocks that you need to modify based on your analysis. In your text editor create a new file and save it as `partition_finder.cfg`. Copy/Paste inside the file the next block:
+For this tutorial we are going to use the `ConCATenated.phy` and a command file that we are going to create together. The command file has different blocks that you need to modify based on your analysis. In your text editor create a new file and save it as `partition_finder.cfg`. Copy/Paste inside the file the next block:
 
 ```
 ## ALIGNMENT FILE ##
@@ -36,7 +36,7 @@ model_selection = BIC;
 ## DATA BLOCKS: see manual for how to define ##
 [data_blocks]
 
-**REPLACE ME BY YOUR PARTITIONS INFORMATION!**
+**REPLACE THIS LINE BY YOUR PARTITIONS INFORMATION!**
 
 ## SCHEMES, search: all | user | greedy | rcluster | rclusterf | kmeans ##
 [schemes]
@@ -44,7 +44,9 @@ search = greedy;
 
 ```
 
-For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `Dataset.phy`. But in this case as we are going to run the job on an online platform, the platform ask us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information we created yesterday and saved as `partitionsCodon.txt`. Take a look at the other options, what else can you modify? Remember to save the changes to your file.
+For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `ConCATenated.phy`. But in this case as we are going to run the job on an online platform and the platform asks us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information that you have to download from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page. The file is called `3_partitions.txt`. This is similar to what we prepared in the last tutorial, but here I just made it to speed up the tutorial. Take a look at the other options, what else can you modify? Remember to save the changes to your file.
+
+Now create another command file called `partitionCodon_finder.cfg`. You will need to get the partition information from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page again. And as I am very creative today I have called the file with the partition information `3_partitionsCodons.txt`!
 
 We are going to use an online platform to run *PartitionFinder* to speed up the analysis and also to introduce you to running analyses remotely. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
 
@@ -58,12 +60,12 @@ You have to click on ***Create New Folder*** and as ***Label*** you use `Course`
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
 
-Click on ***Data*** subfolder then on ***Upload/Enter Data***. Now you should be able to add the needed files by clicking on ***Browse*** and selecting the `Dataset.phy` and `partition_finder.cfg` files. Now click on ***Task*** folder and ***Create New Task*** button. You should have something like the following:
+Click on ***Data*** subfolder then on ***Upload/Enter Data***. Now you should be able to add the needed files by clicking on ***Browse*** and selecting the `ConCATenated.phy` and `partition_finder.cfg` files. Now click on ***Task*** folder and ***Create New Task*** button. You should have something like the following:
 
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres4.png" alt="Cipres4" width="600"></p>
 
-Click on the ***Select Input Data*** button and choose your `Dataset.phy` file and click ***Select Data***. Now under ***Select Tools*** find the ***PartitionFinder2 on XSEDE*** option and click on it. Now click on ***10 Parameters Set*** to see the ones we have to modify. 
+Click on the ***Select Input Data*** button and choose your `ConCATenated.phy` file and click ***Select Data***. Now under ***Select Tools*** find the ***PartitionFinder2 on XSEDE*** option and click on it. Now click on ***10 Parameters Set*** to see the ones we have to modify. 
 For ***Maximum Hours to Run*** choose `1` and in ***Select cfg file (you can also create one below)*** choose your `parition_finder.cfg` file. You should see something like the following image:
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres5.png" alt="Cipres5" width="600"></p>
@@ -152,7 +154,7 @@ begin mrbayes;
 END;
 ```
 
-Now open the nexus file we created, `Dataset.nex` in your preferred text editor (or my preferred text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
+Now open the nexus file we created, `ConCATenated.nex` in your preferred text editor (or my preferred text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
 
 ```
 
@@ -174,7 +176,7 @@ END;
 
 ```
 
-Delete these 2 blocks! We don´t need them. Now replace them with the MrBayes block created by *PartitionFinder*. Save it as `DatasetMB.nex`. We will be using this later. For *IQTree* we don´t need to set the best partitioning scheme as the program will find it as the first step of the analysis. But we would maybe need to create the partition file that can be used to run RaxML on CIPRES for example (We are not going to do so, but you should be able to do it now that you know how *CIPRES* works.).
+Delete these 2 blocks! We don´t need them. Now replace them with the MrBayes block created by *PartitionFinder*. Save it as `ConCATenatedMB.nex`. We will be using this later. For *IQTree* we don´t need to set the best partitioning scheme as the program will find it as the first step of the analysis. But we would maybe need to create the partition file that can be used to run RaxML on CIPRES for example (We are not going to do so, but you should be able to do it now that you know how *CIPRES* works.).
 
 Take a look again to the result of *PartitionFinder* in your text editor. Look at the block for *RaxML*. It should be something like this:
 
