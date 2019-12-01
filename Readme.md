@@ -62,9 +62,9 @@ Here are deposited the instructions for the assignments and exercises.
 Here you can find a list of the programs we are going to use and links to where you can download them.
  
  * **Text Editors:**
-   	- **TextWrangler** for Mac users
-   	- **Notepad++** for Windows users
-   	- **Linux** users not covered
+   	- Mac users: **TextWrangler**
+   	- Windows users: **Notepad++**
+   	- Linux users: Your prefered text editor probably works good enough!
 
  * [MAFFT](https://mafft.cbrc.jp/alignment/software/)
 
@@ -80,7 +80,4 @@ Here you can find a list of the programs we are going to use and links to where 
 	
  * [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
 
- * [BEAST2](https://www.beast2.org/)
-
  * [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.1)
-

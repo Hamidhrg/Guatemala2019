@@ -1,15 +1,15 @@
 # **Model Selection**
 
 
-In the first two tutorials you have learned to download various gene sequences from Genbank and align and concatenate them to create the dataset we want to work on for the rest of the course. You also heard about differences between different file formats and saw how to create the needed formats. For the next tutorial, we are going to use *PartitionFinder* to find the best partitioning scheme for our dataset and also the best models for each partition.
+In the first two tutorials you have learned to download various gene sequences from Genbank and align and concatenate them to create a dataset to practice. You also heard about differences between different file formats and saw how to create the needed formats. For the next tutorial, we are going to use *PartitionFinder* to find the best partitioning scheme for a new dataset and also the best models for each partition. The new dataset is called `ConCATenated.fasta`. As you might guess from its name, it is a dataset of members of felidae family (cats, miauuuuu!). Go to [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) and download `ConCATenated.fasta`). Here we are using this dataset to see who scored higher when I asked about the relationships of the cats to find our **Catman** or **Catwoman** ;)
 
-First remember that our final dataset, `COI_EF1a_Wingless.fasta` was saved as a fasta format (If you did not manage to generate this file, go to ***Molecular-systematics-course/Data/*** and download `2_COI_EF1a_Wingless.fasta`). Now open *Aliview* and open this file. You should have something similar to this:
+First remember that our dataset, `ConCATenated.fasta` is saved as a fasta format. Now open *Aliview* and open this file. You should have something similar to this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Aliview3.png" alt="Aliview3" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Aliview3.png" alt="Aliview3" width="800"></p>
 
 Now I want you to save a \*.phy and a \.nex alignment file with the name **Dataset**. Use the options "***Save as Nexus***" and "***Save as Phylip (full names & padded)***" as seen in the next picture (both options marked with a red rectangle):
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Aliview5.png" alt="Aliview5" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Aliview5.png" alt="Aliview5" width="800"></p>
 
 You should have these two files now:
 
@@ -48,41 +48,41 @@ For ***ALIGNMENT FILE*** section you have to provide the name of the alignment f
 
 We are going to use an online platform to run *PartitionFinder* to speed up the analysis and also to introduce you to running analyses remotely. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
 
 When you log in you will see something like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres2.png" alt="Cipres2" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres2.png" alt="Cipres2" width="800"></p>
 
 You have to click on ***Create New Folder*** and as ***Label*** you use `Course`. Now under your "Folders" you have a folder named ***Course*** and 2 other folders inside of it. Like the following picture:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
 
 Click on ***Data*** subfolder then on ***Upload/Enter Data***. Now you should be able to add the needed files by clicking on ***Browse*** and selecting the `Dataset.phy` and `partition_finder.cfg` files. Now click on ***Task*** folder and ***Create New Task*** button. You should have something like the following:
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres4.png" alt="Cipres4" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres4.png" alt="Cipres4" width="600"></p>
 
 Click on the ***Select Input Data*** button and choose your `Dataset.phy` file and click ***Select Data***. Now under ***Select Tools*** find the ***PartitionFinder2 on XSEDE*** option and click on it. Now click on ***10 Parameters Set*** to see the ones we have to modify. 
 For ***Maximum Hours to Run*** choose `1` and in ***Select cfg file (you can also create one below)*** choose your `parition_finder.cfg` file. You should see something like the following image:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres5.png" alt="Cipres5" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres5.png" alt="Cipres5" width="600"></p>
 
 Now click on ***Save Parameters*** and click ok. Now you should see this:
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres6.png" alt="Cipres6" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres6.png" alt="Cipres6" width="800"></p>
 
 Now in the ***Description*** write `PF1` and click on ***Save and Run Task***. Click ok. You will see this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres7.jpg" alt="Cipres7" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres7.jpg" alt="Cipres7" width="800"></p>
 
 Here you can see that your task is "Running"! Refresh the page from time to time to see when the job is done! You can see this best in the red rectangle on top-left of the picture above under **Running Tasks = 1**. When the number is zero (i.e. you have no more running jobs!) you have to click on the button in the second red rectangle in the above picture, under **Action**, **View Status** or **View Output**.
 
 Now we want to export the results to our computer! So now you should be seeing something like this:
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="800"></p>
 
 Now we want to download the \*.zip file marked with the red rectangle again. Download it and extract the files so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
 
