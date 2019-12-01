@@ -83,4 +83,3 @@ Here you can find a list of the programs we are going to use and links to where 
  * [BEAST2](https://www.beast2.org/)
 
  * [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.1)
-
