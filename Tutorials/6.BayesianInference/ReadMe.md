@@ -7,12 +7,12 @@ Fot this practical, we will work with MrBayes. MrBayes is a program that incorpo
 
 This is a ”user unfriendly” program, i.e. it is command driven and opens up in the terminal window. To use it, you need to know the sequence of commands that need to be input into the program. 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes1.png" alt="MrBayes1" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/6.BayesianInference/MrBayes1.png" alt="MrBayes1" width="600"></p>
 
 The first thing is to prepare your dataset (which is in the NEXUS format). MrBayes analyses can be done either by command line step by step or by adding all the parameters and different data partitions to your data file. You can add this information in a text editor at the end of your data file. See the following example: 
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes_example.png" alt="MrBayes_example" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/6.BayesianInference/MrBayes_example.png" alt="MrBayes_example" width="600"></p>
 
 Open your text editor and simply add at the end of your `DatasetMB.nex` file this block:
 
@@ -49,11 +49,11 @@ END;
 
 After you prepare the NEXUS file, save it as `DatasetMBrun.nex`. Next, open a terminal, run MrBayes and finally run your analysis by writing ”Execute" filename (provide the path of your file). 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes3.png" alt="MrBayes3" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/6.BayesianInference/MrBayes3.png" alt="MrBayes3" width="600"></p>
 
 If the dataset is okay, the analysis should look like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/5.BayesianInference/MrBayes4.png" alt="MrBayes4" width="600"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/6.BayesianInference/MrBayes4.png" alt="MrBayes4" width="600"></p>
 
 As we mentioned before, another way to run the program is by giving the commands step by step. You only need your dataset and partition in the NEXUS format. To do so, follow these instructions: 
 
@@ -67,4 +67,3 @@ Once the analysis is done, you will notice several new files have appeared in yo
 	
 Now you have to determine the burn-in, which means how many sampled generations from the beginning you need to discard. This can be done by giving the command ”sump”. ”sump” summarizes the parameter valuess in both the *.p files, but importantly for now, it generates a graph showing the development of the log likelihood values over the sampled generations. Scroll upwards in the Command box if you do not see the graph. You can visually inspect the graph to see where equilibrium is reached and you can discard all generations before that. To double check, you can run the command again, this time with the number of sampled generations to be discarded, e.g. ”sump burnin=20”. If the graph looks fine, then it is time to summarize the trees with the command ”sumt burnin=20”. This generates 3 new files filename.con, filename.parts and filename.trprobs. For the time being the first file is the most important, it includes the 50%-majority rule tree for the dataset including branch lengths and posterior probabilities. Add the extension .tre to this file and open it in FigTree and click on the ”Phylogram” button to view the branch lengths, and the ”Internal labels” button to view the posterior probabilities.
 	
-
