@@ -165,9 +165,9 @@ END;
 BEGIN CODONS;
 CODONPOSSET * CodonPositions =
  N:,
- 1: 1-3112\3,
- 2: 2-3113\3,
- 3: 3-3111\3;
+ 1: 1-5175\3,
+ 2: 2-5175\3,
+ 3: 3-5175\3;
 CODESET  * UNTITLED = Universal: all ;
 END;
 
