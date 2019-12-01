@@ -44,15 +44,17 @@ Here you will find the files we create during the course. (If at some point you 
 Here are deposited the instructions for the assignments and exercises.
 
 
- * [Learn to generate datasets (1)](../../tree/master/Tutorials/1.DatasetManipulation/)
+ * [1.- Learn to generate datasets](../../tree/master/Tutorials/1.DatasetManipulation/)
 	
- * [Align the gene markers (2)](../../tree/master/Tutorials/2.Alignments/)
+ * [2.- Align the gene markers](../../tree/master/Tutorials/2.Alignments/)
  
- * [Select the best evolutionary model and partitioning scheme (3)](../../tree/master/Tutorials/3.ModelSelection/)
+ * [3.- Select the best evolutionary model and partitioning scheme](../../tree/master/Tutorials/3.ModelSelection/)
  
- * [Maximum likelihood methods (4)](../../tree/master/Tutorials/4.MaximumLikelihood/)
+ * [4.- Maximum likelihood methods: RaxML](../../tree/master/Tutorials/4.MaximumLikelihood/)
  
- * [Bayesian methods (5)](../../tree/master/Tutorials/5.BayesianInference/)
+ * [5.- Maximum likelihood methods: IQTree](../../tree/master/Tutorials/5.IQTree/)
+ 
+ * [6.- Bayesian methods](../../tree/master/Tutorials/6.BayesianInference/)
  
  * [Inference of Times of Divergence (6)](../../tree/master/Tutorials//6.DivergenceTime/)
  
