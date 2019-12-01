@@ -29,7 +29,7 @@ Using a web browser, you need to navigate to the NCBI’s Genbank. Even if the [
 | 17 | NW130-15 | Baeotus beotus | AY788615 | AY788720 | AY788481 |
 
 Pictures of the actual voucher specimens used to generate the sequences above.
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Butterflies_for_tutorial.png" alt="Butterflies" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Butterflies_for_tutorial.png" alt="Butterflies" width="800"></p>
 
 
 
@@ -37,18 +37,18 @@ Pictures of the actual voucher specimens used to generate the sequences above.
 Opening the [link]( https://www.ncbi.nlm.nih.gov/genbank/) provided earlier you can see the following (slight differences may exist due to different web browsers and operating systems and the position of the planets and …).
 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Genbank1.png" alt="Genbank1" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Genbank1.png" alt="Genbank1" width="800"></p>
 
 
 In the red rectangle you see a list option which should be on ***Nucleotide***. Clicking on the list you can see other repositories offered by NCBI website. Here we are going to create a dataset of nucleotide sequences of three protein coding genes, so we chose the ***Nucleotide*** option. Remember that these two markers being protein coding genes, allow us to create also ***Amino Acid*** datasets. *Do you know why we stay with nucleotides in this case? Wich option allows you to create an amino acid dataset?*
 
 Now pick an accession number from the list and hit search. You should see something similar to this picture:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Genbank2.png" alt="Genbank2" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Genbank2.png" alt="Genbank2" width="800"></p>
 
 Take a look at it. Try to decipher different parts of it. Now look at the 2 red rectangles on top of the picture. The one on the left where you can read ***GenBank*** is the format of the information. And the other rectangle ***Send to:*** create a downloadable file. Click on it. Choose ***Complete Record***, ***File*** under *Choose Destination* and finally in *format:* choose ***FASTA***. 
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Genbank3.png" alt="Genbank3" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Genbank3.png" alt="Genbank3" width="800"></p>
 
 Now ***Create File***! And *Voila!* Congratulations, now you have downloaded your first Fasta file.
 
@@ -64,7 +64,7 @@ Wingless.fasta
 
 Now lets take a look at the *FASTA* files we have created. Open any of them in your (prefered) text editor. (Here I have used TextWrangler!)
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/FastaFile.png" alt="FastaFile" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/FastaFile.png" alt="FastaFile" width="800"></p>
 
 As you can see, each entry is something similar to this:
 
@@ -106,13 +106,13 @@ Now we can proceed to the next tutorial to learn about Alignment Methods. But be
 
 Open the program, click on file, Open File and find any of the last fasta files you have created, for example `Wingless2.fasta`. You should see something like this.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview.png" alt="Aliview" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Aliview.png" alt="Aliview" width="800"></p>
 
 Before moving on, consider what this file looks like. Very few sites look  ***aligned***, right? This a quite small dataset of relatively conserved sequences, so you can easily find patterns within the file and you should be able to align it by hand given enough time with no major problems. We will check our alignment once we obtain it in this program again.
 
 Now if you click again on `File` you will see something like this:
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/1.DatasetManipulation/Aliview2.png" alt="Aliview2" width="500"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/1.DatasetManipulation/Aliview2.png" alt="Aliview2" width="500"></p>
 
 As you can see this program allow us to convert/save a sequence file in many different formats which can be used in different programs. Remember this for when we are going to convert the alignment to other file formats than fasta.
 
