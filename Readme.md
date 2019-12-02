@@ -56,8 +56,6 @@ Here are deposited the instructions for the assignments and exercises.
  
  * [6.- Bayesian methods](../../tree/master/Tutorials/6.BayesianInference/)
  
- * [Inference of Times of Divergence (6)](../../tree/master/Tutorials//6.DivergenceTime/)
- 
 
 ### [Programs used in the tutorials](../../tree/master/Software/)
 
@@ -68,18 +66,18 @@ Here you can find a list of the programs we are going to use and links to where 
    	- Windows users: **Notepad++**
    	- Linux users: Your prefered text editor probably works good enough!
 
- * [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+ * MAFFT
 
- * [AliView](http://www.ormbunkar.se/aliview/downloads/)
+ * AliView
 
- * [PartitionFinder2](http://www.robertlanfear.com/partitionfinder/)
+ * PartitionFinder2
 
- * [RAxML](https://antonellilab.github.io/raxmlGUI/)
+ * RAxML
 
- * [IQ-TREE](http://www.iqtree.org/)
+ * IQ-TREE
  
- * [MrBayes](http://nbisweden.github.io/MrBayes/)
+ * MrBayes
 	
- * [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
+ * FigTree
 
  * [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.1)
