@@ -11,12 +11,18 @@ The quickest is to try out the IQ-TREE [web server](http://iqtree.cibiv.univie.a
 iqtree -s file.phy -spp Partitions.txt -m MFP+MERGE -bb 1000 -arlt 1000
 
 Notes:
-`iqtree` funtion will call the executable
-`-s` will call the alignment
-`-spp` is your patition file
+
+`iqtree` funtion will call the executable.
+
+`-s` will call the alignment.
+
+`-spp` is your patition file.
+
 `-m` MFP+MERGE: will search for the best evolutionary model and partitionning scheme for your partitions.
-`-bb` will perfom Ultrafast Boostrap
-`-arlt` will perform the SH-aLRT test
+
+`-bb` will perfom Ultrafast Boostrap.
+
+`-arlt` will perform the SH-aLRT test.
 
 **Tree inference**
 
