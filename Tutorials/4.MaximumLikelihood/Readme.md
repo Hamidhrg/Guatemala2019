@@ -31,6 +31,6 @@ Once you upload the alignment, choose the type of *analysis* that in our case is
 
 Once a job is finished we have created several files. The file `RAxML_bipartitions.RaxMLout.tre` is the one that contains the best inferred tree with the boostrap values for the nodes. Open the *FigTree* program. Open the `RAxML_bipartitions.RaxMLout.tre` file in *FigTree*. As we have not used any outgroup in our dataset, we can use our prior knowledge about cats to reroot the tree! Genera *Panthera* and *Neofelis* form a monophyletic group which is the sister group to all other felids. Use this information to reroot the tree! Check the bootstrap values in the tree. How do you interpret them? Which parts of the tree are not well supported?
 
-
+Now repeat the analisys with the un-partitoned dataset `3_ConCATenated.phy`. Call the output `RaxMLout2` this time. Open the file `RAxML_bipartitions.RaxMLout2.tre`, reroot the tree and compare to the tree obtained before. Are the bootstrap values the same? Did the poorly resolved parts of the tree changed? Are the bootstrap values worst or better? Did the shape of the tree change?
 
 
