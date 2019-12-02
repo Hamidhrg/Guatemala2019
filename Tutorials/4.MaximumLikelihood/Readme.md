@@ -19,31 +19,17 @@ So the first step for you will be to open *Aliview*, load your gene alignment fi
 
 One of the advantages of *raxmlGUI 2.0* is that you can select the number of processors to work with and, therefore, on computers with multiple processors, this greatly accelerates the calculation process. This is selected in the red rectangle at top right of the next picture (choose the maximum number you have there):
  
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/4.MaximumLikelihood/RAxML1.jpg" alt="RAxML1" width="800"></p>
 
 The other red rectangle is where you can click to upload your alignments. Click there and upload your phylip format alignments. RAxML is a program that only allows the implementation of 4 nucleotide evolutionary models: GTR; GTR+G (GTRGAMMA); GTR+G+I (GTRGAMMAI); GTR+I (GTRI). For this exercise choose GTR+G+I.
 
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RaxML2.png" alt="RaxML2" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/4.MaximumLikelihood/RaxML2.png" alt="RaxML2" width="800"></p>
 
 Once you upload the alignment, choose the type of *analysis* that in our case is going to be an ML+rapid bootstrap. Now you will be modifying the substitution model to *GTRGAMMAI* in the smaller red rectangle. Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practical we will leave it at 100 but normally it is advisable to do 1000. 
 
 *BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default. Now define the output folder in the bigger red recangle and name your **Output name id** `RaxMLout`. The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. Now click run! this will show you the program running on the console part.
 
-Once a job is finished we have created several files. The file `RAxML_bipartitions.RaxMLout.tre` is the one that contains the best inferred tree with the boostrap values for the nodes. Open the *FigTree* program. Open the `RAxML_bipartitions.RaxMLout.tre` file in *FigTree*. Check the bootstrap values in the tree and compare the corresponding ones with the result retrieved from the IQTREE analysis.
-
-# Tree visualizations
-
-Open the file .treefile retrieved from IQTREE and .tre from raxmlGUI 2.0 in FigTree and check the support values. The phylogeny should look more or less as shown in the next screenshot.
-
-<p align="center"><img src="https://github.com/niklas-w/Molecular-systematics-course/blob/master/Tutorials/4.MaximumLikelihood/RAxML4.png" alt="RAxML4" width="600"></p>
-
-The tree is rooted by default on the first taxon in your dataset or on the longest branch in the dataset. In our case we should reroot the tree on the branch leading to *Asterocampa* (which is our outgroup). In FigTree, click on the branch leading to *Asterocampa* to select it, and then click on the "Reroot" button in FigTree.
-
-**Questions**
-
-1. Are the RAxML bootstrap values higher/lower compared to those recovered from the UFBoot2 in IQTREE?
-
-2. Are the same nodes/relationships supported?
+Once a job is finished we have created several files. The file `RAxML_bipartitions.RaxMLout.tre` is the one that contains the best inferred tree with the boostrap values for the nodes. Open the *FigTree* program. Open the `RAxML_bipartitions.RaxMLout.tre` file in *FigTree*. As we have not used any outgroup in our dataset, we can use our prior knowledge about cats to reroot the tree! Genera *Panthera* and *Neofelis* form a monophyletic group which is the sister group to all other felids. Use this information to reroot the tree! Check the bootstrap values in the tree. How do you interpret them? Which parts of the tree are not well supported?
 
 
 
