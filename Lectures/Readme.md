@@ -1,1 +1,3 @@
-here we upload the lecture slides
+# Lectures
+
+Here I will upload the lecture slides, papers and interesting material shared during the lectures.
