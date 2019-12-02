@@ -27,7 +27,7 @@ The other red rectangle is where you can click to upload your alignments. Click 
 
 Once you upload the alignment, choose the type of *analysis* that in our case is going to be an ML+rapid bootstrap. Now you will be modifying the substitution model to *GTRGAMMAI* in the smaller red rectangle. Then select *reps* which indicates the number of bootstrap replicates we want to do. In this practical we will leave it at 100 but normally it is advisable to do 1000. 
 
-*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default. Now define the output folder in the bigger red recangle and name your output `RaxMLout`. The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. Now click run! this will show you the program running on the console part.
+*BS brL* Indicates whether you want to store the branch lengths on each of the bootstrap trees. This increases the computing time and therefore we leave it at default. Now define the output folder in the bigger red recangle and name your **Output name id** `RaxMLout`. The *outgroup* window allows you to select the outgroup. It is not necessary to define an outgroup a priori. Now click run! this will show you the program running on the console part.
 
 Once a job is finished we have created several files. The file `RAxML_bipartitions.RaxMLout.tre` is the one that contains the best inferred tree with the boostrap values for the nodes. Open the *FigTree* program. Open the `RAxML_bipartitions.RaxMLout.tre` file in *FigTree*. Check the bootstrap values in the tree and compare the corresponding ones with the result retrieved from the IQTREE analysis.
 
