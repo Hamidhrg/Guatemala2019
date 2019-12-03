@@ -60,13 +60,13 @@ You have to click on ***Create New Folder*** and as ***Label*** you use `Course`
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres3.png" alt="Cipres3" width="800"></p>
 
-Click on ***Data*** subfolder then on ***Upload/Enter Data***. Now you should be able to add the needed files by clicking on ***Browse*** and selecting the `ConCATenated.phy` and `partition_finder.cfg` files. Now click on ***Task*** folder and ***Create New Task*** button. You should have something like the following:
+Click on ***Data*** subfolder then on ***Upload/Enter Data***. Now you should be able to add the needed files by clicking on ***Browse*** and selecting the `ConCATenated.phy` and `partitionCodon_finder.cfg` files. Now click on ***Task*** folder and ***Create New Task*** button. You should have something like the following:
 
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres4.png" alt="Cipres4" width="600"></p>
 
 Click on the ***Select Input Data*** button and choose your `ConCATenated.phy` file and click ***Select Data***. Now under ***Select Tools*** find the ***PartitionFinder2 on XSEDE*** option and click on it. Now click on ***10 Parameters Set*** to see the ones we have to modify. 
-For ***Maximum Hours to Run*** choose `1` and in ***Select cfg file (you can also create one below)*** choose your `parition_finder.cfg` file. You should see something like the following image:
+For ***Maximum Hours to Run*** choose `1` and in ***Select cfg file (you can also create one below)*** choose your `partitionCodon_finder.cfg` file. You should see something like the following image:
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres5.png" alt="Cipres5" width="600"></p>
 
@@ -99,7 +99,7 @@ search            : greedy
 
 ```
 
-In this block it tells you which alignments have been used, what we have chosen for the branchlenghts, which models have been considered, what criterion is used to choose the best model and finally what kind of search we have done in the model space. Now let’s take a look at the real result of the analysis. But first do you remember how many partitions we had in the beginning? Three codon positions for each gene, therefore 9 partitions to start with! Which partitions are similar? Which ones you think are similar enough that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
+In this block it tells you which alignments have been used, what we have chosen for the branchlenghts, which models have been considered, what criterion is used to choose the best model and finally what kind of search we have done in the model space. Now let’s take a look at the real result of the analysis. But first do you remember how many partitions we had in the beginning? Three codon positions for each gene, therefore 12 partitions to start with! Which partitions are similar? Which ones you think are similar enough that we could merge them in the same partition? Take a look at the following block to see if your guess was accurate enough!
 
 
 ```
@@ -189,4 +189,4 @@ DNA, Subset5 = 2691-3113\3, 2692-3113\3, 1452-2690\3
 DNA, Subset6 = 1453-2690\3
 ```
 
-Save this to a new \*.txt file and call it `partitionsPF.txt`. This will be useful for running *RaxML* in *CIPRES* for example.
+Save this to a new \*.txt file and call it `partitionsCodonPF.txt`. This will be useful for running *RaxML* in *CIPRES* for example.
