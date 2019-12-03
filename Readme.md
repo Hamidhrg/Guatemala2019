@@ -2,6 +2,14 @@
 
 By Hamid Ghanavi from the Systematic Biology Group, Lund University
 
+My contact information:
+
+Tel: +34 687992130
+
+email: hamid.ghanavi [at] gmail.com
+
+Skype: Hamid_hrg
+
 ## **Introduction**
 
 In this intense course we will introduce the basics of phylogenetics, covering both theory and practice. The idea behind the course is that the student gets an overview of the actual methods and learns through hands on exercises to use some of the most used computer programs to study the phylogeny of any group using genetic information.
