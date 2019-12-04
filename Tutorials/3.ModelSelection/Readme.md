@@ -105,9 +105,9 @@ Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open 
 ```
 Settings used
 
-alignment         : ./infile.phy
+alignment         : .\3_ConCATenated.phy
 branchlengths     : linked
-models            : JC, K80, SYM, F81, HKY, GTR, JC+G, K80+G, SYM+G, F81+G, HKY+G, GTR+G, JC+I, K80+I, SYM+I, F81+I, .........
+models            : JC, K80, SYM, F81, HKY, GTR, JC+G, K80+G, SYM+G, F81+G, HKY+G, GTR+G, JC+I, K80+I, SYM+I, F81+I, HKY+I, GTR+I, JC+I+G, K80+I+G, SYM+I+G, F81+I+G, HKY+I+G, GTR+I+G
 model_selection   : bic
 search            : greedy
 
@@ -119,20 +119,21 @@ In this block it tells you which alignments have been used, what we have chosen 
 ```
 Best partitioning scheme
 
-Scheme Name       : step_3
-Scheme lnL        : -14592.3761597
-Scheme BIC        : 29812.1330086
-Number of params  : 78
-Number of sites   : 3113
-Number of subsets : 6
+Scheme Name       : step_5
+Scheme lnL        : -43335.28643798828
+Scheme BIC        : 88090.1375826
+Number of params  : 166
+Number of sites   : 5175
+Number of subsets : 7
 
 Subset | Best Model | # sites    | subset id                        | Partition names
-1      | GTR+I+G    | 484        | 2da80f86bd83f708144569e4c220f5c0 | COI_pos1                               
-2      | HKY+I      | 483        | 44eaa85b31bf7cdaa26d41550e25323f | COI_pos2
-3      | HKY+G      | 483        | a025b1f5af55bcc97f43596191b3173e | COI_pos3
-4      | GTR+G      | 555        | 9962ca78e0bdee4c13544ee243422b2d | EF1a_pos3, Wingless_pos3
-5      | GTR+I+G    | 695        | 9736b577fc59a152b6f08ff5ab57d236 | Wingless_pos1, Wingless_pos2, EF1a_pos1
-6      | F81        | 413        | ecdf616bfb5ddb191f696f4f945cb649 | EF1a_pos2
+1      | HKY+G      | 226        | f2c1be7e04d4e9da29f5a44a1eb788d0 | ATP6_pos1
+2      | HKY+I+G    | 1211       | 82c73c361abe0cac0a253acfaa82a3a9 | ND5_pos1, ATP6_pos1, Cytb_pos1
+3      | GTR+I+G    | 740        | 28ba51e5e5506d52f222b5d99548e660 | ATP6_pos1, COI_pos1
+4      | SYM+I+G    | 514        | 7275a23ee7a5907b034b0985213aa715 | COI_pos1
+5      | HKY+I      | 514        | 40419ec8c2e7a5340490ed010bb4502a | COI_pos1
+6      | GTR+I+G    | 985        | b99819bf2ce9c29eee1d9e58cb94c67e | ND5_pos1, Cytb_pos1
+7      | GTR+I+G    | 985        | b8d8979469541b8f690718e7380fae3c | ND5_pos1, Cytb_pos1
 ```
 
 Here in the result you have 2 sub-blocks. In the first one you get some general information about your results as the likelihood of the scheme chosen as the best, or number of parameters or .... Then you can see the subsets chosen as the best scheme for partitioning. *Were you correct in your guess?* 
@@ -142,25 +143,28 @@ Next you see different blocks which can be used for running different programs. 
 ```
 begin mrbayes;
 
-	charset Subset1 = 1-1450\3;
-	charset Subset2 = 2-1450\3;
-	charset Subset3 = 3-1450\3;
-	charset Subset4 = 1451-2690\3 2693-3113\3;
-	charset Subset5 = 2691-3113\3 2692-3113\3 1452-2690\3;
-	charset Subset6 = 1453-2690\3;
+	charset Subset1 = 1-678\3;
+	charset Subset2 = 3359-5175\3 2-678\3 2222-3357\3;
+	charset Subset3 = 3-678\3 681-2220\3;
+	charset Subset4 = 679-2220\3;
+	charset Subset5 = 680-2220\3;
+	charset Subset6 = 3358-5175\3 2221-3357\3;
+	charset Subset7 = 3360-5175\3 2223-3357\3;
 
-	partition PartitionFinder = 6:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6;
+	partition PartitionFinder = 7:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6, Subset7;
 	set partition=PartitionFinder;
 
-	lset applyto=(1) nst=6 rates=invgamma;
-	lset applyto=(2) nst=2 rates=propinv;
-	lset applyto=(3) nst=2 rates=gamma;
-	lset applyto=(4) nst=6 rates=gamma;
-	lset applyto=(5) nst=6 rates=invgamma;
-	lset applyto=(6) nst=1;
+	lset applyto=(1) nst=2 rates=gamma;
+	lset applyto=(2) nst=2 rates=invgamma;
+	lset applyto=(3) nst=6 rates=invgamma;
+	lset applyto=(4) nst=6 rates=invgamma;
+prset applyto=(4) statefreqpr=fixed(equal);
+	lset applyto=(5) nst=2 rates=propinv;
+	lset applyto=(6) nst=6 rates=invgamma;
+	lset applyto=(7) nst=6 rates=invgamma;
 
-    	prset applyto=(all) ratepr=variable brlensp=unconstrained:Exp(100.0) shapepr=exp(1.0) tratiopr=beta(2.0,1.0);
-    	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
 
     	mcmc ngen=2000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
     	sump relburnin=yes [no] burninfrac=0.25 [2500];
@@ -179,9 +183,9 @@ END;
 BEGIN CODONS;
 CODONPOSSET * CodonPositions =
  N:,
- 1: 1-5175\3,
- 2: 2-5175\3,
- 3: 3-5175\3;
+ 1: 1-3357\3,
+ 2: 2-3357\3,
+ 3: 3-3357\3;
 CODESET  * UNTITLED = Universal: all ;
 END;
 
@@ -195,12 +199,13 @@ Delete these 2 blocks! We don´t need them. Now replace them with the MrBayes bl
 Take a look again to the result of *PartitionFinder* in your text editor. Look at the block for *RaxML*. It should be something like this:
 
 ```
-DNA, Subset1 = 1-1450\3
-DNA, Subset2 = 2-1450\3
-DNA, Subset3 = 3-1450\3
-DNA, Subset4 = 1451-2690\3, 2693-3113\3
-DNA, Subset5 = 2691-3113\3, 2692-3113\3, 1452-2690\3
-DNA, Subset6 = 1453-2690\3
+DNA, Subset1 = 1-678\3
+DNA, Subset2 = 3359-5175\3, 2-678\3, 2222-3357\3
+DNA, Subset3 = 3-678\3, 681-2220\3
+DNA, Subset4 = 679-2220\3
+DNA, Subset5 = 680-2220\3
+DNA, Subset6 = 3358-5175\3, 2221-3357\3
+DNA, Subset7 = 3360-5175\3, 2223-3357\3
 ```
 
 Save this to a new \*.txt file and call it `partitionsCodonPF.txt`. This will be useful for running *RaxML* in *CIPRES* for example.
