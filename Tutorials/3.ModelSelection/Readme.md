@@ -50,6 +50,8 @@ Now create another command file called `partitionCodon_finder.cfg`. You will nee
 
 ***IMPORTANT NOTE*** as today the cipres website is down, go down to the Persian cat picture, and follow the tutorial from there!
 
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/ArrowDown.png" alt="Arrow" width="500"></p>
+
 ## Cipres
 
 We are going to use an online platform to run *PartitionFinder* to speed up the analysis and also to introduce you to running analyses remotely. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
@@ -92,7 +94,7 @@ Now we want to export the results to our computer! So now you should be seeing s
 
 Now we want to download the \*.zip file marked with the red rectangle again. Download it and extract the files so we can take a look at them. 
 
-<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/PersianCat.png" alt="Cipres" width="800"></p>
+<p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/PersianCat.png" alt="PersianCat" width="800"></p>
 
 **Today as the Cipres website is down, download `3_analysis.zip` from the [Guatemala2019/Data/](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page and continue the exercise from here.**
 
