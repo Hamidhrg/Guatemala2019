@@ -46,7 +46,9 @@ search = greedy;
 
 For ***ALIGNMENT FILE*** section you have to provide the name of the alignment file which is in this case `ConCATenated.phy`. But in this case as we are going to run the job on an online platform and the platform asks us to use `alignment = infile.phy;`. In the ***DATA BLOCKS*** you have to use the partition information that you have to download from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page. The file is called `3_partitions.txt`. This is similar to what we prepared in the last tutorial, but here I just made it to speed up the tutorial. Take a look at the other options, what else can you modify? Remember to save the changes to your file.
 
-Now create another command file called `partitionCodon_finder.cfg`. You will need to get the partition information from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page again. And as I am very creative today I have called the file with the partition information `3_partitionsCodons.txt`! ***But remeber that for running PartitionFinder on your computer*** you have to change in the `## ALIGNMENT FILE ##` section, in the `alignment = infile.phy;` the name of the alignment to your own alignment file, and save the configuration file always as `partition_finder.cfg`. 
+Now create another command file called `partitionCodon_finder.cfg`. You will need to get the partition information from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page again. And as I am very creative today I have called the file with the partition information `3_partitionsCodons.txt`! 
+
+***But remeber that for running PartitionFinder on your computer*** you have to change in the `## ALIGNMENT FILE ##` section, in the `alignment = infile.phy;` the name of the alignment to your own alignment file, and save the configuration file always as `partition_finder.cfg`. 
 
 ***IMPORTANT NOTE*** as today the cipres website is down, go down to the Persian cat picture, and follow the tutorial from there!
 
