@@ -48,6 +48,8 @@ For ***ALIGNMENT FILE*** section you have to provide the name of the alignment f
 
 Now create another command file called `partitionCodon_finder.cfg`. You will need to get the partition information from the [***Guatemala2019/Data/***](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page again. And as I am very creative today I have called the file with the partition information `3_partitionsCodons.txt`!
 
+## Cipres
+
 We are going to use an online platform to run *PartitionFinder* to speed up the analysis and also to introduce you to running analyses remotely. The platform that we are going to use now is called ***CIPRES***. It is a very useful online platform using very fast super computers where you can run plenty of other programs also. But you need to register first, so click and open (in a new window) the following link: [www.phylo.org/portal2/login!input.action](https://www.phylo.org/portal2/login!input.action). You will see something like the next image. If you don’t have an account already, click on the option in the red rectangle and register.
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres.png" alt="Cipres" width="800"></p>
@@ -86,7 +88,11 @@ Now we want to export the results to our computer! So now you should be seeing s
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/3.ModelSelection/Cipres8.png" alt="Cipres8" width="800"></p>
 
-Now we want to download the \*.zip file marked with the red rectangle again. Download it and extract the files so we can take a look at them. Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
+Now we want to download the \*.zip file marked with the red rectangle again. Download it and extract the files so we can take a look at them. 
+
+**Today as the Cipres website is down, download `3_analysis.zip` from the [Guatemala2019/Data/](https://github.com/Hamidhrg/Guatemala2019/tree/master/Data) page and continue the exercise from here.**
+
+Inside your `analysis.zip`, you will find a file called `best_scheme.txt`, open it in your preferred text editor. Now I will explain the different blocks of information you have in the result file. First, you should see something like the next block:
 
 ```
 Settings used
