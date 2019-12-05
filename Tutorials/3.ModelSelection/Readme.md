@@ -165,10 +165,6 @@ prset applyto=(4) statefreqpr=fixed(equal);
 
 	prset applyto=(all) ratepr=variable;
 	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
-
-    	mcmc ngen=2000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
-    	sump relburnin=yes [no] burninfrac=0.25 [2500];
-    	sumt relburnin=yes [no] burninfrac=0.25 [2500] contype=halfcompat [allcompat];
 END;
 ```
 
