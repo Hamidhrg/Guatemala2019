@@ -14,7 +14,7 @@ The first thing is to prepare your dataset (which is in the NEXUS format). MrBay
 
 <p align="center"><img src="https://github.com/Hamidhrg/Guatemala2019/blob/master/Tutorials/6.BayesianInference/MrBayes_example.png" alt="MrBayes_example" width="600"></p>
 
-Open your text editor and simply add at the end of your `DatasetMB.nex` file this block:
+Open your text editor and simply add at the end of your `ConCATenatedMB.nex` file this block:
 
 ```
 begin mrbayes;
