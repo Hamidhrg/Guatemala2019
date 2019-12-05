@@ -19,31 +19,32 @@ Open your text editor and simply add at the end of your `DatasetMB.nex` file thi
 ```
 begin mrbayes;
 
-	charset Subset1 = 1-1450\3;
-	charset Subset2 = 2-1450\3;
-	charset Subset3 = 3-1450\3;
-	charset Subset4 = 1451-2690\3 2693-3113\3;
-	charset Subset5 = 2691-3113\3 2692-3113\3 1452-2690\3;
-	charset Subset6 = 1453-2690\3;
+	charset Subset1 = 1-678\3;
+	charset Subset2 = 3359-5175\3 2-678\3 2222-3357\3;
+	charset Subset3 = 3-678\3 681-2220\3;
+	charset Subset4 = 679-2220\3;
+	charset Subset5 = 680-2220\3;
+	charset Subset6 = 3358-5175\3 2221-3357\3;
+	charset Subset7 = 3360-5175\3 2223-3357\3;
 
-	partition PartitionFinder = 6:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6;
+	partition PartitionFinder = 7:Subset1, Subset2, Subset3, Subset4, Subset5, Subset6, Subset7;
 	set partition=PartitionFinder;
-    
-    set autoclose=yes;
 
-	lset applyto=(1) nst=6 rates=invgamma;
-	lset applyto=(2) nst=2 rates=propinv;
-	lset applyto=(3) nst=2 rates=gamma;
-	lset applyto=(4) nst=6 rates=gamma;
-	lset applyto=(5) nst=6 rates=invgamma;
-	lset applyto=(6) nst=1;
+	lset applyto=(1) nst=2 rates=gamma;
+	lset applyto=(2) nst=2 rates=invgamma;
+	lset applyto=(3) nst=6 rates=invgamma;
+	lset applyto=(4) nst=6 rates=invgamma;
+prset applyto=(4) statefreqpr=fixed(equal);
+	lset applyto=(5) nst=2 rates=propinv;
+	lset applyto=(6) nst=6 rates=invgamma;
+	lset applyto=(7) nst=6 rates=invgamma;
 
-    prset applyto=(all) ratepr=variable brlensp=unconstrained:Exp(100.0) shapepr=exp(1.0) tratiopr=beta(2.0,1.0);
-    unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
 
-    mcmc ngen=2000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
-    sump relburnin=yes [no] burninfrac=0.25 [2500];
-    sumt relburnin=yes [no] burninfrac=0.25 [2500] contype=halfcompat [allcompat];
+    	mcmc ngen=2000000 printfreq=1000 samplefreq=1000 nchains=4 nruns=2 savebrlens=yes [temp=0.11];
+    	sump relburnin=yes [no] burninfrac=0.25 [2500];
+    	sumt relburnin=yes [no] burninfrac=0.25 [2500] contype=halfcompat [allcompat];
 END;
 ```
 
