@@ -165,7 +165,8 @@ prset applyto=(4) statefreqpr=fixed(equal);
 
 	prset applyto=(all) ratepr=variable;
 	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
-END;
+
+end;
 ```
 
 Now open the nexus file we created, `ConCATenated.nex` in your preferred text editor (or my preferred text editor actually!). As we saw yesterday the data in this format is organized in blocks. The first block is your data, then you will have a block that *Aliview* have created. Something like this:
